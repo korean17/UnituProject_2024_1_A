@@ -14,7 +14,7 @@ public class ExGen : MonoBehaviour
         if(checkTime > 2.0f)
         {
             GameObject Temp = Instantiate(item);
-            Temp.transform.position += new Vector3(0.0f, Random.Range(0.4), 0.0f);
+            Temp.transform.position += new Vector3(0.0f, Random.Range(0,4), 0.0f);
             Destroy(Temp, 20.0f);
             checkTime = 0.0f;
         }
